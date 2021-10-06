@@ -7,6 +7,11 @@ class PuntGeo(nom: String, coord: Coordenades): Serializable {
         private const val serialVersionUID: Long = 1
     }
 
-    var nom: String =""
-    var coord: Coordenades = Coordenades(0.0,0.0)
+    var nom: String
+    var coord: Coordenades
+
+    init {
+        this.nom = nom
+        this.coord = coord
+    }
 }
