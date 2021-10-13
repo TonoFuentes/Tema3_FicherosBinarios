@@ -45,10 +45,16 @@ class Finestra : JFrame() {
             // accions quan s'ha seleccionat un element del combobox,
             // i que han de consistir en omplir el JTextArea
             val r = llista.item(combo.selectedIndex) as Element
+            area.text = ""
 
-            for (i in 0 until llista.getLength()) {
-                val el = llista.item(i) as Element
-                area.append(el.getElementsByTagName("Nom").item(0).getTextContent() + " (" + el.getElementsByTagName("Latitud").item(0).getTextContent() + ", " + el.getElementsByTagName("Longitud").item(0).getTextContent() + ")")
+            for (cont in 0 until llista.length) {
+                val el = llista.item(cont) as Element
+                val puntos = el.getElementsByTagName("Punts").item()
+
+                if(((combo.selectedIndex) == cont)) {
+                    for (contador in 0 until puntos)
+                        area.append(el.getElementsByTagName("Nom").item(contador+1).getTextContent() + " (" + el.getElementsByTagName("Latitud").item(contador).getTextContent() + ", " + el.getElementsByTagName("Longitud").item(contador).getTextContent() + ")\n")
+                }
             }
         }
     }
