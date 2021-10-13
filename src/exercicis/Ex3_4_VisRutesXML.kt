@@ -49,10 +49,10 @@ class Finestra : JFrame() {
 
             for (cont in 0 until llista.length) {
                 val el = llista.item(cont) as Element
-                val puntos = el.getElementsByTagName("Punts").item()
+                val puntos = el.getElementsByTagName("Punt")
 
                 if(((combo.selectedIndex) == cont)) {
-                    for (contador in 0 until puntos)
+                    for (contador in 0 until puntos.length)
                         area.append(el.getElementsByTagName("Nom").item(contador+1).getTextContent() + " (" + el.getElementsByTagName("Latitud").item(contador).getTextContent() + ", " + el.getElementsByTagName("Longitud").item(contador).getTextContent() + ")\n")
                 }
             }
