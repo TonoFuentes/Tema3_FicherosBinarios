@@ -35,5 +35,22 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Documents/moshi-master" />
+          <root url="file://$USER_HOME$/Documents/moshi-master/adapters/src/main/java" />
+          <root url="file://$USER_HOME$/Documents/moshi-master/adapters/src/test/java" />
+          <root url="file://$USER_HOME$/Documents/moshi-master/examples/src/main/java" />
+          <root url="file://$USER_HOME$/Documents/moshi-master/kotlin/codegen/src/test/java" />
+          <root url="file://$USER_HOME$/Documents/moshi-master/moshi/records-tests/src/test/java" />
+          <root url="file://$USER_HOME$/Documents/moshi-master/moshi/src/main/java" />
+          <root url="file://$USER_HOME$/Documents/moshi-master/moshi/src/main/java16" />
+          <root url="file://$USER_HOME$/Documents/moshi-master/moshi/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -50,12 +50,8 @@ class FinestraJSON : JFrame() {
             // i que han de consistir en omplir el JTextArea
             area.text = ""
 
-            for (cont in 0 until llistaRutes.size) {
-                if (combo.selectedIndex == cont) {
-                    for (puntos in llistaRutes.get(cont).llistaDePunts)
-                    area.append(puntos.nom + " (" + puntos.coord.latitud + ", " + puntos.coord.longitud + ")\n")
-                }
-            }
+            for (puntos in llistaRutes.get(combo.selectedIndex).llistaDePunts)
+                area.append(puntos.nom + " (" + puntos.coord.latitud + ", " + puntos.coord.longitud + ")\n")
         }
     }
 }

@@ -14,7 +14,7 @@ fun main() {
         var listaRutas: MutableList<PuntGeo> = ArrayList()
         for (r in 1..rutasTotal) {
             val nom = fichero.readUTF()
-            val coord: Coordenades = Coordenades(fichero.readDouble(),fichero.readDouble())
+            val coord = Coordenades(fichero.readDouble(),fichero.readDouble())
             listaRutas.add(PuntGeo(nom,coord))
         }
         val ruta = Ruta(nombre,desnivell,desnivellAcum,listaRutas)
